@@ -26,12 +26,14 @@
  ],
  "fields": [
   {
+   "default": "50",
    "description": "In pixel",
    "fieldname": "logo_height",
    "fieldtype": "Data",
    "label": "Logo Height"
   },
   {
+   "default": "50",
    "description": "In pixel",
    "fieldname": "logo_width",
    "fieldtype": "Data",
@@ -77,7 +79,7 @@
    "label": "Whitelabel Setting"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "ignore_onboard_whitelabel",
    "fieldtype": "Check",
    "label": "Ignore Onboard Whitelabel"
@@ -97,17 +99,19 @@
    "fieldtype": "Column Break"
   },
   {
-   "default": "0",
+   "default": "1",
    "fieldname": "disable_new_update_popup",
    "fieldtype": "Check",
    "label": "Disable New Update Popup"
   },
   {
+   "default": "Jirlie",
    "fieldname": "whitelabel_app_name",
    "fieldtype": "Data",
    "label": "Whitelabel App Name"
   },
   {
+   "default": "/assets/whitelabel/images/jirlie_logo(animated).gif",
    "fieldname": "application_logo",
    "fieldtype": "Attach",
    "label": "Application Logo"
@@ -122,7 +126,7 @@
  ],
  "issingle": 1,
  "links": [],
- "modified": "2022-04-20 11:27:44.618584",
+ "modified": "2023-09-18 05:23:46.052606",
  "modified_by": "Administrator",
  "module": "Whitelabel",
  "name": "Whitelabel Setting",
@@ -142,5 +146,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "track_changes": 1
 }
