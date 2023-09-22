@@ -13,6 +13,12 @@ def whitelabel_patch():
 	update_field_label()
 	if cint(get_frappe_version()) >= 13 and not frappe.db.get_single_value('Whitelabel Setting', 'ignore_onboard_whitelabel'):
 		update_onboard_details()
+	if cint(get_frappe_version()) >= 14:
+				frappe.db.set_value("Website Settings","Website Settings","app_name","Jirlie")
+				if "erpnext" in frappe.get_installed_apps():
+					frappe.db.set_value("System Settings","System Settings","app_name","Jirlie")
+				else:
+					frappe.db.set_value("System Settings","System Settings","app_name","Jirlie")
 
 
 def update_field_label():
